@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Practice_Chap02_Test</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<servlet>
+	<servlet-name>HW</servlet-name> <!-- 서블릿 이름 -->
+	<servlet-class>sec01_exam.HelloWorld</servlet-class> <!-- 매핑할 클래스 경로를 지정 -->
+</servlet> 
+
+<servlet-mapping>
+	<servlet-name>HW</servlet-name>	<!-- 서블릿 이름은 항상 동일 -->
+	<url-pattern>/hw</url-pattern>	<!-- URL을 매핑하는 부분 -->
+</servlet-mapping>
+
+
+<!-- <servlet>
+	<servlet-name>Now</servlet-name>
+	<servlet-class>sec02_exam.NowTime</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Now</servlet-name>
+	<url-pattern>zw</url-pattern>
+</servlet-mapping> -->
+  
+</web-app>
